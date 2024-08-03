@@ -20,16 +20,51 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-id-badge"></span>
+							<img src="images/blob.png" alt="Deilen Davis"></img>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<div>
-									<h1><b>Deilen <span style="color:#0d0d0d;">Davis</span></b></h1>
+								<h1><b>Deilen <span style="color:#0d0d0d;">Davis</span></b></h1>
+																				
+										<div style="position: relative; width: fit-content;">
+											<video id="video" width=100% height=auto controls>
+											  <source src="Learn HTML video in 2 minutes.mp4" type="video/mp4">
+											  Your browser does not support the video tag.
+											</video>
+											<div col-12 id="overlay-text" style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%);">
+											  Who am I? <span style="opacity: 0.5;">0:37</span>
+											</div>
+										</div>
+
+										<script>
+											document.getElementById('video').addEventListener('play', function() {
+											  document.getElementById('overlay-text').style.display = 'none';
+											});
+										  </script>
+
+										<script>
+											const video = document.getElementById('myVideo');
+											video.controls = false;
+																					
+											video.addEventListener('play', () => {
+											video.controls = true;
+											});
+										
+											video.addEventListener('pause', () => {
+											video.controls = false;
+											});
+										
+											video.addEventListener('ended', () => {
+											video.controls = false;
+											});
+										</script>
+
+										  
 								</div>
 								<p><span style="color:#f2f2f0"><i>Mechanical Engineer</i></span> . <span style="color:#0d0d0d">Computer Science.</span>
 									</p>
-							</div>
+								
+							
 						</div>
 						<nav>
 							<ul>
@@ -48,7 +83,7 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.png" alt="" /></span>
+								<span class="image main"><img src="images/pic01.png" alt="Deilen Davis" /></span>
 								<p>Welcome to my professional portfolio. At RTX, I sharpened my CREO design skills, working on space projects like Orion and Artemis. As a mechanical engineering intern, I spent seven months full-time collaborating with a team of over 15, guided by veteran engineers with 40+ years of experience. Beyond the tech stuff, I was also the office networker and morale booster.</p>
 								<p></p>
 							</article>
@@ -56,14 +91,14 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic02.jpg" alt="Deilen Davis" /></span>
 								<p>I co-founded "dig," an AI startup app for uncovering underground music, which launched on Google Play and Apple App Store, attracting 1,000 users and generating $1,000 in revenue through targeted advertising and exclusive beta trials. My passion for cybersecurity led to a #3 ranking in an RTX hackathon, with skills in pen testing, Windows troubleshooting, and cloud security, supported by a government-funded certificate. Academically, I earned a Mechanical Engineering degree with a Computer Science minor from a top 100 university, leading clubs like ASME Baja Racing and AIAA Rocketry, and raising $8,000 to send eight engineers to the NSBE national conference for career and networking opportunities. Driven by curiosity, I've built computers, launched websites, and participated in design competitions, always eager to learn and collaborate on challenging projects.</p>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Resume</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic03.jpg" alt="Deilen Davis" /></span>
 								<p>At a recent men's conference organized by the Chamber of Commerce, I volunteered to share my story about the transformative impact of the STEM scholarship from Intersect Power. This scholarship has empowered me to engage in community outreach, helping the youth and my mentees by inspiring them and opening new opportunities. </p>
 							</article>
 
