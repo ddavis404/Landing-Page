@@ -1316,8 +1316,25 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #f2f2f0;
+			border: solid 1px #f2f2f000;
 			border-radius: 100%;
+			
+		}
+
+		.logo img {
+			width: 100%;
+			overflow: hidden;
+			justify-content: center;
+			align-items: center;
+			border-radius: 16px; 
+			padding-right: 0px;
+			height: auto;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.logo img:hover{
+			transform: scale(1.02);
+			transition: transform 0.5s;			
 		}
 
 			#header .logo .icon:before {
@@ -1376,7 +1393,7 @@ input, select, textarea {
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px #f2f2f0;
 			}
 
 				#header nav ul li:first-child {
@@ -1394,14 +1411,15 @@ input, select, textarea {
 					font-size: 1rem;
 					border-bottom: 0;
 					font-weight: bold;
+					color: #0d0d0d;
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						color: #08678c;
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(26, 22, 234, 0.075);
 					}
 
 		#header nav.use-middle:after {
@@ -1412,8 +1430,10 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #ffffff;
+			background: #f2f2f0;
 		}
+
+		
 
 		#header nav.use-middle ul li.is-middle {
 			border-left: 0;
@@ -1687,3 +1707,37 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+	
+		
+
+
+
+
+
+		/*This is the most recent video player*/
+		  #video {
+			border-radius: 50px;
+			box-shadow: 0 16px 64px rgba(0, 0, 0, 0.1);
+			width: 100%;
+		  }
+		  
+		  #overlay-text {
+			position: absolute;
+			top: 250px;
+			left: 125px;
+			transform: translate(50%, -50%);
+			color: white;
+			background-color: rgba(0, 0, 0, 0.1);
+			padding: 5px;
+			border-radius: 16px;
+			font-size: 2vw;
+		  }
+
+		  
+		  
+		  video:hover {
+			transform: scale(1.02);
+			transition: transform 0.5s;
+		  }
+
